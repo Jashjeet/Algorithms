@@ -1,0 +1,13 @@
+Dynamic Programming
+The input for this problem consists of two integers n and k, where 1 ≤ k ≤ 10 and a sequence of distinct numbers c1 < c2 < ... < ck, where each ci is an integer between 1 and 10. Your program needs to output the number of ways one can write n as a sum of integers from the set {c1,c2,...,ck}. You only have to output the number of diﬀerent partitions, not the partitions themselves. Furthermore, you can output either (the choice is up to you): • The number itself (note, that it can be very large). • The last digit of this number (note that in this case it suﬃces to always take the recurrence mod 10 in each step).
+Run your program for the following ﬁve inputs: 1. n = 103, k = 2, c1 = 1,c2 = 2. 2. n = 103, k = 3, c1 = 1,c2 = 3,c3 = 5. 3. n = 2·103, k = 3, c1 = 2,c2 = 3,c3 = 5. 4. n = 103, k = 10, c1 = 1,c2 = 2,c3 = 3,c4 = 4,c5 = 5,c6 = 6,c7 = 7,c8 = 8,c9 = 9,c10 = 10. 5. n = 2·103, k = 4, c1 = 2, c2 = 4, c3 = 5, c4 = 6.
+1
+Example: Input: n = 5,k = 3,c1 = 1,c2 = 3,c3 = 4.
+Output: 6.
+Partitions:
+1. 1 + 1 + 1 + 1 + 1
+2. 1 + 1 + 3
+3. 1 + 3 + 1
+4. 3 + 1 + 1
+5. 4 + 1
+6. 1 + 4
